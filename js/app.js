@@ -27,7 +27,7 @@ document.getElementById('button-section').addEventListener('click', function (ev
         if(clicked == "C"){
             inputPin.value = '';
         }else if(clicked == "<"){
-            inputPin.value = inputPin.value.substr(1,inputPin.value.length-1);
+            inputPin.value = inputPin.value.substr(0,inputPin.value.length-1);
         }
 
     }else{
