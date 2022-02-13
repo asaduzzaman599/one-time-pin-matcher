@@ -54,6 +54,7 @@ function matchPin(){
         if(actionnumber < 1){
             document.getElementById('submit-btn').setAttribute( 'disabled',true);
         }
+        genaratePin();
         document.getElementById('action-left-number').innerText = actionnumber;
         document.getElementById('action-left').style.display = 'block';
         
