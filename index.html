@@ -19,7 +19,7 @@
             </div>
             <div class="col-md-6">
                 <div class="input-section half-width">
-                    <input id="input-btn" class="form-control" type="text">
+                    <input id="input-pin" class="form-control" type="text">
                     <div id="button-section" class="numbers">
                         <div class="calc-body">
                             <div class="calc-button-row">
@@ -43,16 +43,16 @@
                                 <div class="button">C</div>
                             </div>
                             <div>
-                                <button type="submit" class="submit-btn">Submit</button>
-                                <p class="action-left">3 try left</p>
+                                <button type="submit" id='submit-btn' onclick="matchPin()" class="submit-btn">Submit</button>
+                                <p id="action-left" class="action-left"><span id="action-left-number">5</span> try left</p>
                             </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="notify-section">
-            <p class="notify">❌ Pin Didn't Match, Please try again</p>
-            <p class="notify">✅ Pin Matched... Secret door is opening for you</p>
+            <p id="failure-message" class="notify">❌ Pin Didn't Match, Please try again</p>
+            <p id="success-message" class="notify">✅ Pin Matched... Secret door is opening for you</p>
         </div>
     </div>
     
