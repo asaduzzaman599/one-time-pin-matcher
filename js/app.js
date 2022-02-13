@@ -45,6 +45,8 @@ function matchPin(){
         document.getElementById('failure-message').style.display = "none";
         document.getElementById('action-left').style.display = 'none';
         actionnumber = 5;
+        document.getElementById('input-pin').value = '';
+        document.getElementById('generate-pin').value = '';
     }else{
         document.getElementById('failure-message').style.display = "block";
         document.getElementById('success-message').style.display = "none";
